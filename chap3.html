@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Chapter 3</title> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+   
+  <html lang="en" dir="ltr"> 
+    <head> 
+      <meta charset="UTF-8"> 
+      <title> Chapter 3 </title> 
+      <link rel="stylesheet" href="style.css"> 
+      
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     </head> 
+  <body> 
+    <div class="sidebar"> 
+      <div class="logo-details"> 
+          <div class="logo_name">Activity TIC</div> 
+          <i class='bx bx-menu' id="btn" ></i> 
+      </div> 
+      <ul class="nav-list"> 
+        <li> 
+          <a href="Home page.html"> 
+            <i class='bx bxs-home-heart'></i> 
+            <span class="links_name">Home page</span> 
+   
+          </a> 
+           
+           <span class="tooltip">Chapter 1</span> 
+        </li> 
+        <li> 
+         <a href="chap1.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 1</span> 
+         </a> 
+         <span class="tooltip">Chapter 1</span> 
+       </li> 
+       <li> 
+         <a href="chap2.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 2</span> 
+         </a> 
+         <span class="tooltip">Chapter 2</span> 
+       </li> 
+       <li> 
+         <a href="chap3.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 3</span> 
+         </a> 
+         <span class="tooltip">Chapter 3</span> 
+       </li> 
+       <li> 
+         <a href="chap4.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 4</span> 
+         </a> 
+         <span class="tooltip">Chapter 4</span> 
+       </li> 
+       <li> 
+         <a href="chap5.html"> 
+          <i class='bx bxs-book-heart'></i> 
+           <span class="links_name">Chapter 5</span> 
+         </a> 
+         <span class="tooltip">Chapter 5</span> 
+       </li> 
+      </ul> 
+    </div> 
+    <section class="home-section"> 
+        
+<html> 
+<head> 
+  <title>Chapter 3 : Le Model OSI</title> 
+</head> 
+<body>
+    <div class="chapter">
+    <h1>Chapter 3: Le Model OSI</h1>
+    
+    <h2>1) Les Composants matériel d’un Réseau informatique :</h2>
+    <h3> Les cartes réseau (NIC) :</h3>
+    <p>Sont des composants matériels qui permettent à un ordinateur de se connecter à un réseau.
+    </p>
+    <h3>SWITCH :</h3>
+    <p>Un composant matériel utilisé pour connecter des appareils sur un réseau local (LAN) en utilisant des adresses MAC.</p>
+    <h3>HUB :</h3>
+    <p>Est un composant matériel utilisé pour connecter plusieurs appareils sur un réseau local (LAN), il fonctionne comme un répéteur.</p>
+    <h2>2)Le Modèle OSI : </h2>
+    <p>Est un modèle de référence pour les communications de réseau qui divise les communications en sept couches distinctes.</p>
+    <p>
+      <li>La couche physique</li>
+      <li>La couche liaison de données</li>
+      <li>La couche réseau</li>
+      <li>La couche transport</li>
+      <li>La couche session</li>
+      <li>La couche présentation</li>
+      <li>La couche application</li>
+    </p>
+    
+    <h2>3)  Le Modèle TCP/IP :</h2>
+    <p>Le modèle TCP/IP est un modèle de référence pour les communications de réseau, qui est utilisé pour la conception et la mise en œuvre des réseaux informatiques modernes. Il divise les communications en quatre couches principales : La couche liaison de données, La couche réseau, La couche transport et La couche application.</p>
+    <h2>4) L’adressage : </h2>
+    <p>Les communications dans un réseau obéissent à des règles :</p>
+    <p>
+      <li>Adressage qui permet d'identifier de manière unique les deux unités en communication.</li>
+      <li>Architecture qui définit les rôles endossés par les deux unités.</li>
+      <li>Protocoles qui assurent l'échange des données.</li>
+    </p>
+    <h3>Un adressage IP :</h3>
+    <p>Une adresse IP est le numéro qui identifie chaque ordinateur dans les réseaux auxquels il appartient. Il y a deux modes d'adressage : IPV4 et IPV6.</p>
+    <h2>5)L’adresse IPV4 :</h2>
+    <p>Les 4 octets composent deux parties : une partie pour Partie réseau et l'autre pour la partie hôtes :</p>
+<p>
+  <p>Chaque adresse IPV4 contient deux parties :</p>
+  <p>
+    <li>Une première partie des bits de valeur supérieure : Adresse réseau</li>
+    <li>Une deuxième partie des bits : Adresse hôte</li>
+  </p>
+  <li>On reconnaît qu'un réseau est un {hôte} quand la valeur des bits pour la partie réseau est la même.</li>
+  <li>Le nombre des bits contenus dans la partie hôtes détermine le nombre des machines possible sur ce réseau.</li>
+</p>
+    <p>L’adressage IPV4 s’effectué selon les types suivants : l’adresse réseau, L’adresse de diffusion, L’adresse hôtes et Le masque de réseau et de sous réseaux .</p>
+  <br>
+  <br>
+
+</body>
+</html> 
+ 
+      <script>  
+    let sidebar = document.querySelector(".sidebar"); 
+    let closeBtn = document.querySelector("#btn"); 
+    let searchBtn = document.querySelector(".bx-search"); 
+   
+    closeBtn.addEventListener("click", ()=>{ 
+      sidebar.classList.toggle("open"); 
+      menuBtnChange();
+    }); 
+   
+    searchBtn.addEventListener("click", ()=>{ 
+      sidebar.classList.toggle("open"); 
+      menuBtnChange(); 
+    }); 
+   
+  
+    function menuBtnChange() { 
+     if(sidebar.classList.contains("open")){ 
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+     }else { 
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+     } 
+    } 
+    </script> 
+  </body> 
+  </html> 
+</body> 
+</html>

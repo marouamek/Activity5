@@ -1,0 +1,224 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Chapter 5</title> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+   
+  <html lang="en" dir="ltr"> 
+    <head> 
+      <meta charset="UTF-8"> 
+      <title> Responsive Sidebar Menu  | CodingLab </title> 
+      <link rel="stylesheet" href="style.css"> 
+    
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     </head> 
+  <body> 
+    <div class="sidebar"> 
+      <div class="logo-details"> 
+          <div class="logo_name">Activity TIC</div> 
+          <i class='bx bx-menu' id="btn" ></i> 
+      </div> 
+      <ul class="nav-list"> 
+        <li> 
+          <a href="Home page.html"> 
+            <i class='bx bxs-home-heart'></i> 
+            <span class="links_name">Chapter 1</span> 
+   
+          </a> 
+           
+           <span class="tooltip">Chapter 1</span> 
+        </li> 
+        <li> 
+         <a href="chap1.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 1</span> 
+         </a> 
+         <span class="tooltip">Chapter 1</span> 
+       </li> 
+       <li> 
+         <a href="chap2.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 2</span> 
+         </a> 
+         <span class="tooltip">Chapter 2</span> 
+       </li> 
+       <li> 
+         <a href="chap3.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 3</span> 
+         </a> 
+         <span class="tooltip">Chapter 3</span> 
+       </li> 
+       <li> 
+         <a href="chap4.html"> 
+          <i class='bx bxs-book-heart'></i> 
+           <span class="links_name">Chapter 4</span> 
+         </a> 
+         <span class="tooltip">Chapter 4</span> 
+       </li> 
+       <li> 
+         <a href="chap5.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 5</span> 
+         </a> 
+         <span class="tooltip">Chapter 5</span> 
+       </li> 
+      </ul> 
+    </div> 
+    <section class="home-section"> 
+ 
+<html> 
+<head> <div class="chapter"> 
+  <title>Chapter 5 : Systeme de Gestion de Version</title> 
+</head> 
+<body class="text">
+  <div class="ch">
+<h1>Chapter 5: Systeme de Gestion de Version </h1>
+
+<h2>1) Introduction :</h2>
+<p>
+  Qu’est-ce que Git ?
+  Git est un outil qui va vous autoriser de faire le versioning, il permet d’avoir  l’historique de toutes les modifications que vous faite à un projet. Il permet de résoudre les problèmes qui l’on peut avoir au niveau des conflits. 
+
+</p>
+
+<h2>2) A quoi sert concrètement un système de gestion de version ?</h2>
+ <p>
+  Les logiciels de versioning vont nous permettre d’effectuer ces opérations d’une manière robuste et avec des fonctionnalités utiles. 
+  Git permet à différentes versions d’un même fichier de coexister et de coordonner le travail entre plusieurs personnes.
+
+ </p>  
+
+<h2>3) Les deux modèles des logiciels de gestion de version :    </h2>
+<p><head>
+
+  Les logiciels de gestion de version sont construits sur l’un des deux modèles suivant :
+
+  <h3> Modèle centralisé  </h3>
+  
+      <p> principe de base d’un modèle centralisé est la centralisation du code source lié au projet, utilisateurs doivent se connecter au serveur pour travailler sur ce code.  </p>
+      
+  <h3> Modèle décentralisé</h3> 
+  <p>Ce modèle invite l’utilisateur de télécharger et à héberger l’intégralité du code source du projet sur sa propre machine.
+    Et parmi ces avantages notables : la simplicité du travail et la sécurité.</p>
+  
+
+  </P>
+  <h2> 4) Qu’est-ce que GitHub ? </h2>
+  <p>
+      GitHub est considéré comme un outil essentiel pour les ingénieurs logiciels, et sa popularité est inégalée. Il  est un service en ligne d’hébergement de dépôts Git qui fait office de serveur central pour ces dépôts.  
+  </p>
+
+  <h2>5) Utiliser Git : ligne de commande, console et interface graphique</h2>
+  <p>
+      Pour installer Git nous allons utiliser la console de commande
+      
+          <li>Raccourcie : Windows + R.</li>
+          <li>Dans la barre de recherche, rechercher cmd.</li>
+      
+  </p>
+  <h2>6) Installation de Git :</h2>
+    <li>Télécharger la dernière version sur le site http://git-scm.com/downloads.</li>
+    <li>Ouvrir le fichier téléchargé suivre les instructions à l’écran en laissant les valeurs par défaut.</li>
+
+  <h2>7) Paramétrage de Git :</h2> 
+    <li>Le Git doit être installé.</li>  
+    <li>Utiliser la commande <span style="color:red">git config</span>pour voir et modifier les variables de configuration qui contrôlent tous les aspects de apparence de Git.</li>		
+    <li >Passer option --global à la commande git config pour utiliser les informations
+      globalement.</li>	
+    <li >Renseigner votre nom et votre adresse e-mail avec les commandes git config <span style="color:red"> –global
+      user.name</span> «  Votre nom » et git config <span style="color:red">--global user.email </span> « Votre adresse e-mail ».</li> 
+    <li>Vérifier que vos informations ont été enregistrées en tapant<span style="color: red;"> git config user.name</span> et <span style="color: red;">git config user.email.</span></li> 
+     
+  <h2>8) Démarer un dépôt Git :</h2>
+  <p>Il existe deux façons de créer un dépôt Git :</p>
+  
+      <li>On peut importer un répertoire déjà existant dans Git.</li>
+      <li>On peut cloner un dépôt Git déjà existant.</li>
+  
+  <h2>9) La gestion des informations selon Git :</h2>
+  <p>
+      Git gère les informations sous forme d’instantanés ou « snapshots », ce qui permet de réaliser la plupart des opérations localement sans avoir besoin d’une connexion à un serveur central distant, rendant ainsi le travail plus rapide et plus agréable.
+  </p>
+  <h2>10) Les états des fichiers :</h2> 
+  <p>
+      Git est un outil populaire utilisé pour le contrôle de version dans le développement de logiciels. Il permet de suivre les modifications apportées aux fichiers d’un projet, qui peuvent être soit suivis par une version, soit non suivis. Un fichier est considéré comme « suivi » s’il a été enregistré dans la base de données lors du dernier instantané capturé par Git. En revanche, tout fichier ne faisant pas partie du dernier instantané et n’ayant pas été indexé est « non suivi ». Initialement, tous les fichiers d’un dépôt nouvellement créé sont non suivis et doivent être indexés pour être enregistrés dans la base de données. Cependant, lors du clonage d’un référentiel existant, tous les fichiers sont déjà suivis. Les fichiers suivis peuvent avoir trois états : modifié, indexé (en phase) et validé. Lors du démarrage d’un dépôt Git à partir d’un dépôt local, tous les fichiers doivent être validés, et valider un fichier signifie le stocker dans la base de données locale. Les fichiers nouveaux ou modifiés sont considérés comme 
+      « non suivis » ou « modifiés ». Un fichier modifié est considéré comme tel tant qu’il n’a pas été indexé. Indexer un fichier signifie indiquer à Git qu’il doit faire partie du prochain instantané dans sa version actuelle. Enfin, lors de la prise d’un instantané de l’état actuel du projet (c’est-à-dire tous les fichiers indexés et non modifiés), tous les fichiers qui font partie de l’instantané sont considérés comme « validés» à nouveau, et le cycle recommence.
+      
+  </p>
+  <h2>11) Les zones de travails :</h2>
+  <p>
+      Git est un système de contrôle de version qui organise les fichiers en états et les relie à des zones de travail. Chaque projet Git dispose d’un arbre de travail, d’une zone de transit et d’un dépôt. L’arbre de travail est une vérification de la version du projet, où les fichiers sont extraits de la base de données compressée et placés sur le disque pour être modifiés. La zone de transit stocke des informations sur les fichiers qui feront partie de la prochaine livraison.Le dépôt est l’endroit où Git stocke les métadonnées et la base de données d’objets du projet. Le processus de travail consiste à modifier ou à créer des fichiers dans le répertoire de travail, à les indexer pour les déplacer vers la zone de stockage et à les valider pour les ajouter au répertoire Git.
+  </p>
+  <h2>12) Créer un dépôt Git à partir d’un répertoire existant :</h2>
+  
+      <li>D’abord on doit créer un document (répertoire) qui contient les fichiers (ressources) qu’on veut utiliser.
+          Note : La commande <span style="color:blue"> cd</span><span style="color:red"><path> </span> aide à nous positionner à un emplacement dans le pc et <span style="color:red">dir</span> pour afficher les fichier et dossiers dans l’emplacement actuel. Puis on utilise la commande git init pour initialiser le dépôt Git. On reçoit un message qui nous informe qu’il est bien initialisé. La commande git status est une commande très utile pour déterminer l’état des fichiers. Ensuite on doit indexer nos fichiers et pour cela on utilise la commande git add. Cette étape sert à ce que nos fichiers puissent être validés.
+      </li>
+      <li>Note : les fileglobs utilisent les extensions de chemin de fichier. Suivant pour valider les fichiers et les ajouter en base on utilise la commande git commit .Ça aide à la compréhension des modifications par différents contributeurs en ajoutant un message après la validation.</li>
+      <li>Finalement,  on tape: wq entrée ou x et entrée  ZZ pour quitter et valider.</li>
+      <li>A la fin tous les fichiers doivent être suivis et enregistrés en base et qu’aucune modification a été apportée depuis le dernier commit.</li>
+
+  
+  <h2>13) Cloner un dépôt Git:</h2>
+  <p>
+      Il y a une autre méthode pour démarrer un dépôt c'est de cloner localement un dépôt existant en utilisant la commande Git clone puis créez un repo sur GitHub. Après la création du repo maintenant nous pouvons transmettre nos fichiers à ce repo comme suit :
+  </p>
+  <p><span style="color:red"> git branch -M main.</span></p>
+  <p><span style="color:red">git remote add origin http://github.com/Owner_name/ExempleClone.git.</span></p> 
+  <p><span style="color:red">git push -u origin main.</span></p>
+  <p>Reste à vérifier notre repos for assurer que les fichiers ont été transmis.</p>
+  
+  <h2>14) Ajouter ou modifier des fichiers dans un projet et actualiser notre dépôt Git</h2>
+  <p>Notre projet contient un ensemble des fichiers, ainsi qu’un dépôt Git qui sert à gérer les différentes versions de ce projet. Pendant que nous travaillons sur le projet, nous pourrons ajouter, modifier ou supprimer certains fichiers, et pour pouvoir y accéder plus tard (au fichiers précédents), nous devrons effectuer ces modifications dans Git.</P>
+  <p> <span style="color:red"> Git add</span> et <span style="color:red">git commit</span> des commandes qui nous permettre à enregistrer un fichier dans le dépôt Git.</p>
+  <p>Le <span style="color:red">commit</span> va enregistrer notre fichier au moment du <spam style="color:red">Git add</spam>.</p>
+  <p>Donc pour valider le fichier il faut d’abord effectuer un <span style="color:red">git add</span>  puis un <span style="color:red"> git commit </span>cela va enregistrer les dernières modifications dans le dépôt Git.</p>
+
+  <h2>15) Consulter l’historique des modifications Git :</h2>
+   <p><span style="color:red">Git log</span> c’est une commande qui nous permet de consulter l’historique de Git.</p>  
+  <h2>16) Annuler des modifications apportées à un fichier :</h2>
+   <p><span style="color:red">Git checkout</span> --nom du fichier-- ou git restore, sont deux commandes qui nous permet à   revenir à l’état enregistrer précédent.</p>
+  <h2>17) Qu’est-ce qu’une branche ? </h2>
+  <p>Une branche est une copie de notre projet, dont on peut l’affecter des modifications sans endommager le projet principal.</p>
+  <p>La création de cette branche nous emmènera a créé une copie physique, ce qui rendra l’opération plus lourd.</p>  
+  <p>Une branche dans Git, est simplement un pointeur vers un commit.</p>
+  <p>Un pointeur sert à accéder à une donnée. </p>
+  <p><span style="color:red">Master</span> est une branche sert à pointer sur le dernier commit effectuer.</p>
+<br>
+<br>
+</div>
+</body>
+</html> 
+ 
+      <script>  
+    let sidebar = document.querySelector(".sidebar"); 
+    let closeBtn = document.querySelector("#btn"); 
+    let searchBtn = document.querySelector(".bx-search"); 
+   
+    closeBtn.addEventListener("click", ()=>{ 
+      sidebar.classList.toggle("open"); 
+      menuBtnChange();
+    }); 
+   
+    searchBtn.addEventListener("click", ()=>{ 
+      sidebar.classList.toggle("open"); 
+      menuBtnChange(); 
+    }); 
+   
+    
+    function menuBtnChange() { 
+     if(sidebar.classList.contains("open")){ 
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+     }else { 
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+     } 
+    } 
+    </script> 
+  </body> 
+  </html> 
+</body> 
+</html>

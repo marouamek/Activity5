@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Chapter 4</title> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+   
+  <html lang="en" dir="ltr"> 
+    <head> 
+      <meta charset="UTF-8"> 
+      <title> Chapter 4 </title> 
+      <link rel="stylesheet" href="style.css"> 
+    
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     </head> 
+  <body> 
+    <div class="sidebar"> 
+      <div class="logo-details"> 
+        
+          <div class="logo_name">Activity TIC</div> 
+          <i class='bx bx-menu' id="btn" ></i> 
+      </div> 
+      <ul class="nav-list"> 
+        <li> 
+          <a href="Home page.html"> 
+            <i class='bx bxs-home-heart'></i> 
+            <span class="links_name">Home page</span> 
+   
+          </a> 
+           
+           <span class="tooltip">Chapter 1</span> 
+        </li> 
+        <li> 
+         <a href="chap1.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 1</span> 
+         </a> 
+         <span class="tooltip">Chapter 1</span> 
+       </li> 
+       <li> 
+         <a href="chap2.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 2</span> 
+         </a> 
+         <span class="tooltip">Chapter 2</span> 
+       </li> 
+       <li> 
+         <a href="chap3.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 3</span> 
+         </a> 
+         <span class="tooltip">Chapter 3</span> 
+       </li> 
+       <li> 
+         <a href="chap4.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 4</span> 
+         </a> 
+         <span class="tooltip">Chapter 4</span> 
+       </li> 
+       <li> 
+         <a href="chap5.html"> 
+          <i class='bx bxs-book-heart'></i>
+           <span class="links_name">Chapter 5</span> 
+         </a> 
+         <span class="tooltip">Chapter 5</span> 
+       </li> 
+  
+      </ul> 
+    </div> 
+    <section class="home-section"> 
+        
+<html> 
+<body> <div class="chapter"> 
+  <h1>Chapter 4 : Internet et Web </h1> 
+  
+  <h2>1) Introduction :</h2> 
+  <p> 
+   Le web est une partie des contenus circulant sur un support de communication 
+générale called internet, et il n&#39;est qu&#39;une de ses applications qui nous permet de 
+consulter des pages accessibles sur des sites avec un navigateur. 
+  </p> 
+  
+  <h3> Principe WWW :</h3> 
+  <p> 
+    <li>Accéder à des documents textuels.</li> 
+    <li>Situé sur des machines accessibles par Internet.</li> 
+    <li>Relié entre eux par un mécanisme de lien 《 hypertexte 》.</li> 
+    <li>Actuellement : service des ressources.</li> 
+    <li>De différentes natures.</li> 
+  </p> 
+      <h3>Uniform Resource Locator (URL) :</h3> 
+   <ul><p>-URL est le nom unique d&#39;une page accédé par un lien hypertexte.</p></ul> 
+  <h2>2) Aspect techniques du Web :</h2> 
+  <p> 
+    <li>URL.</li> 
+    <li>HTTP.</li> 
+    <li>HTML.</li> 
+  </p> 
+  
+  <h2>3) Page web et site Web :</h2> 
+  <h3>Page web :</h3> 
+  <p>
+    Une page web est un document multimédia, programmé en HTML, et 
+stocké dans un fichier html.<br>
+    Elle est interprétée par un navigateur, accédé sur internet par URL.<br>
+    
+  </p> 
+  <h3>Site web :</h3> 
+  <p> 
+  Un site Web est une liaison entre des pages Web par des liens hypertexte 
+autour d&#39;une thématique commune, Elles partagent la même entité et 
+accessibles par des URL et des pages d&#39;accueil communes sur un même 
+serveur.<br>
+Structuré comme un disque local, permet de définir des chemins relatifs.</p>
+  <h2>4) Création d&#39;une page Web HTML :</h2> 
+   <p>- Un document HTML est :</p> 
+   <p> 
+   <li>Un fichier texte, structuré par des balises.</li> 
+   <li>Interpréter dans un navigateur.</li> 
+   <li>Créé dans un éditeur de pages Web.</li></p> 
+   <h3>Les principes de langage HTML :</h3> 
+   <h3><b> Les balises </b> : les 4 balises de bases sont :</h3> 
+   <p><b>HTML:</b>Délimite le début et la fin du document.</p> 
+   <p><b>HEAD:</b>Entête du document.</p> 
+   <p><b>TITLE:</b>Titre du document.</p> 
+   <p><b>BODY:</b>Corps du document.</p> 
+   <p>Les balises secondaires sont :</p> 
+   <p><b>hn:</b> Titre de niveau n 1 à 6.</p> 
+   <p><b>p:</b> Paragraphe.</p> 
+   <ul><li>Une balise est structuré comme suit :</li></ul> 
+   <h3>&lt;Balise&gt; ...&lt;/balise&gt;</h3> 
+   <br>
+   <br>
+</body> 
+</html>
+ 
+      <script>  
+    let sidebar = document.querySelector(".sidebar"); 
+    let closeBtn = document.querySelector("#btn"); 
+    let searchBtn = document.querySelector(".bx-search"); 
+   
+    closeBtn.addEventListener("click", ()=>{ 
+      sidebar.classList.toggle("open"); 
+      menuBtnChange();
+    }); 
+   
+    searchBtn.addEventListener("click", ()=>{ 
+      sidebar.classList.toggle("open"); 
+      menuBtnChange(); 
+    }); 
+   
+    
+    function menuBtnChange() { 
+     if(sidebar.classList.contains("open")){ 
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+     }else { 
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+     } 
+    } 
+    </script> 
+  </body> 
+  </html> 
+</body> 
+</html>
